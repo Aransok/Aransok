@@ -35,7 +35,7 @@ Self-hosted CI/CD deploy pipeline · Automated backups & recovery
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,django,flask,react,ts,js,postgres,sqlite,docker,html,css,git&theme=dark" alt="Skills" />
+<img src="https://skillicons.dev/icons?i=python,django,flask,react,angular,ts,js,postgres,sqlite,mongodb,express,docker,terraform,html,css,git&theme=dark" alt="Skills" />
 
 </div>
 
