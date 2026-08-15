@@ -47,6 +47,12 @@ AI agents, RAG pipelines, and full-stack production systems — orchestrating LL
 
 <div align="center">
 
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Aransok&theme=tokyonight&hide_border=true" alt="Streak Stats" height="165" />
+
+</div>
+
+<div align="center">
+
 📍 Plovdiv, Bulgaria
 
 </div>
