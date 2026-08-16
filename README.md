@@ -52,6 +52,17 @@ AI agents, RAG pipelines, and full-stack production systems — orchestrating LL
 
 </div>
 
+---
+
+## 📄 Resume / CV
+
+<div align="center">
+
+[![Resume](https://img.shields.io/badge/Resume-Download%20PDF-2DD4BF?style=for-the-badge&logo=readdotcv&logoColor=white)](https://portfolio-website-fr7t.onrender.com/static/media/Doan_s_CV.pdf)
+[![ATS Resume](https://img.shields.io/badge/ATS%20Version-Download%20PDF-2DD4BF?style=for-the-badge&logo=readdotcv&logoColor=white)](https://portfolio-website-fr7t.onrender.com/static/media/Doan_Idriz_CV_ATS.pdf)
+
+</div>
+
 <div align="center">
 
 📍 Plovdiv, Bulgaria
