@@ -8,6 +8,7 @@
 
 [![Email](https://img.shields.io/badge/Email-doanchetoidriz%40gmail.com-2DD4BF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:doanchetoidriz@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Doan%20Idriz-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/doan-idriz-70b472165)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-2DD4BF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://portfolio-website-fr7t.onrender.com)
 
 </div>
 
