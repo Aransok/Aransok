@@ -48,7 +48,7 @@ AI agents, RAG pipelines, and full-stack production systems — orchestrating LL
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Aransok&theme=tokyonight&hide_border=true" alt="Streak Stats" height="165" />
+<img src="./profile-3d-contrib/profile-ember.svg" alt="3D graph of my GitHub contributions over the last year" width="100%" />
 
 </div>
 
