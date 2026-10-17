@@ -1,0 +1,17 @@
+{
+  "type": "normal",
+  "fileName": "profile-ember.svg",
+  "backgroundColor": "#090b0f",
+  "foregroundColor": "#e9edf2",
+  "strongColor": "#ffb35c",
+  "weakColor": "#8b95a3",
+  "radarColor": "#7fe3d4",
+  "growingAnimation": true,
+  "contribColors": [
+    "#141922",
+    "#12423f",
+    "#1d7268",
+    "#4cc7b4",
+    "#ffb35c"
+  ]
+}
