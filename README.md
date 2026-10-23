@@ -48,6 +48,8 @@ AI agents, RAG pipelines, and full-stack production systems — orchestrating LL
 
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/Aransok/Aransok/main/profile-3d-contrib/streak-ember.svg" alt="GitHub contribution streak" width="100%" />
+
 <img src="https://raw.githubusercontent.com/Aransok/Aransok/main/profile-3d-contrib/profile-ember.svg" alt="3D graph of my GitHub contributions over the last year" width="100%" />
 
 </div>
