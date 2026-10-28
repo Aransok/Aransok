@@ -14,6 +14,7 @@ on:
       - ".github/scripts/item_card.py"
       - ".github/scripts/wow_static.py"
       - ".github/scripts/compose.py"
+      - ".github/scripts/battle_card.py"
 
 permissions:
   contents: write
@@ -36,6 +37,7 @@ jobs:
       - name: Stitch cards into one window
         run: |
           python3 .github/scripts/wow_static.py
+          python3 .github/scripts/battle_card.py
           python3 .github/scripts/compose.py
       - name: Commit and push
         run: |

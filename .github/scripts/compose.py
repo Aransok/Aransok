@@ -7,7 +7,7 @@ Run after the card generators: python3 .github/scripts/compose.py
 import re
 
 DIR = "profile-3d-contrib"
-PARTS = ["legendary-item", "achievements", "quest-log", "action-bar"]
+PARTS = ["legendary-item", "battle", "achievements", "quest-log", "action-bar"]
 W, PAD, GAP, TOP = 840, 34, 30, 182
 INNER = W - 2 * PAD
 
@@ -57,7 +57,7 @@ def main():
         pieces.append(svg)
         y += h + GAP
     H = y - GAP + PAD + 40
-    out = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H:.0f}" viewBox="0 0 {W} {H:.0f}" role="img" aria-label="Doan Idriz: legendary item card, achievements, quest log and action bar">
+    out = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H:.0f}" viewBox="0 0 {W} {H:.0f}" role="img" aria-label="Doan Idriz: legendary item card, bug hunt animation, achievements, quest log and action bar">
 <title>Doan Idriz, Forger of Agents</title>
 <style>
 .bg-star {{ animation: bg-twinkle 3s ease-in-out infinite; }}
