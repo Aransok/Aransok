@@ -1,7 +1,7 @@
 name: Profile cards
 
-# Redraws the 3D contribution graph, the achievements panel and the
-# legendary item card once a day.
+# Redraws the achievements panel and the legendary item card once a day,
+# then stitches all cards into one window.
 on:
   schedule:
     - cron: "17 3 * * *"
@@ -10,7 +10,6 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/profile-3d.yml"
-      - ".github/profile-3d.json"
       - ".github/scripts/streak_card.py"
       - ".github/scripts/item_card.py"
       - ".github/scripts/wow_static.py"
@@ -24,11 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: .github/profile-3d.json
       - name: Draw achievements panel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
