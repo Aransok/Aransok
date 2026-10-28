@@ -13,6 +13,8 @@ on:
       - ".github/profile-3d.json"
       - ".github/scripts/streak_card.py"
       - ".github/scripts/item_card.py"
+      - ".github/scripts/wow_static.py"
+      - ".github/scripts/compose.py"
 
 permissions:
   contents: write
@@ -37,6 +39,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
         run: python3 .github/scripts/item_card.py
+      - name: Stitch cards into one window
+        run: |
+          python3 .github/scripts/wow_static.py
+          python3 .github/scripts/compose.py
       - name: Commit and push
         run: |
           git config user.name github-actions
