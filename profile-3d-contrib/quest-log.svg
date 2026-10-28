@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="400" viewBox="0 0 840 400" role="img" aria-label="Quest log: completed Broffice, active AI Agents Office, Project Ember">
+<title>Quest Log</title>
+<style>
+text { font-family: "Friz Quadrata TT", Verdana, "Segoe UI", system-ui, sans-serif; }
+.prog { transform-box: fill-box; transform-origin: left; animation: prog 6s ease-in-out infinite; }
+@keyframes prog { 0% { transform: scaleX(.15); } 50% { transform: scaleX(.85); } 100% { transform: scaleX(.15); } }
+@media (prefers-reduced-motion: reduce) { .prog { animation: none; transform: scaleX(.6); } }
+</style>
+<defs>
+  <radialGradient id="parch" cx=".5" cy=".45" r=".75"><stop offset="0" stop-color="#f3e3bf"/><stop offset=".8" stop-color="#e2c994"/><stop offset="1" stop-color="#c9a86a"/></radialGradient>
+</defs>
+<rect x="2" y="2" width="836" height="396" rx="10" fill="#1a130b" stroke="#c9a24a" stroke-width="3"/>
+<rect x="16" y="44" width="808" height="340" rx="4" fill="url(#parch)"/>
+<text x="24" y="31" font-size="16" font-weight="700" fill="#ffd100">Quest Log</text>
+<text x="816" y="31" text-anchor="end" font-size="11" fill="#9a8a6a">1 completed · 2 active</text>
+<line x1="440" y1="64" x2="440" y2="368" stroke="#7a5a32" stroke-opacity=".5"/>
+
+<text x="36" y="82" font-size="19" font-weight="700" fill="#5a2d00">Broffice: Open the Shop</text>
+<text x="36" y="106" font-size="13" fill="#2b1a08">Build and launch a full e-shop for a Bulgarian retailer.</text>
+<text x="36" y="132" font-size="13" font-weight="700" fill="#5a2d00">Objectives</text>
+<text x="52" y="150" font-size="14" fill="#2b1a08"><tspan fill="#2f7d16" font-weight="700">✓</tspan>  Product catalog</text><text x="52" y="174" font-size="14" fill="#2b1a08"><tspan fill="#2f7d16" font-weight="700">✓</tspan>  Dual pricing engine</text><text x="52" y="198" font-size="14" fill="#2b1a08"><tspan fill="#2f7d16" font-weight="700">✓</tspan>  Promotions system</text><text x="52" y="222" font-size="14" fill="#2b1a08"><tspan fill="#2f7d16" font-weight="700">✓</tspan>  B2B and company orders</text><text x="52" y="246" font-size="14" fill="#2b1a08"><tspan fill="#2f7d16" font-weight="700">✓</tspan>  Self-hosted CI/CD and backups</text>
+<text x="36" y="290" font-size="13" font-weight="700" fill="#5a2d00">Rewards</text>
+<text x="36" y="312" font-size="13" fill="#2b1a08">Real customers at broffice.bg</text>
+<g transform="translate(36 332)">
+  <rect width="150" height="26" rx="3" fill="#2a1d0c" stroke="#c9a24a"/>
+  <text x="75" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#ffd100">Quest Complete</text>
+</g>
+
+<text x="470" y="82" font-size="13" font-weight="700" fill="#5a2d00">ACTIVE QUESTS</text>
+<g transform="translate(470 118)">
+  <circle cx="12" cy="-5" r="11" fill="#2a1d0c" stroke="#c9a24a"/>
+  <text x="12" y="0" text-anchor="middle" font-size="15" font-weight="700" fill="#ffd100">!</text>
+  <text x="34" y="0" font-size="16" font-weight="700" fill="#5a2d00">AI Agents Office</text>
+  <text x="34" y="22" font-size="12.5" fill="#2b1a08">Run a virtual company of 8 AI agents.</text>
+  <rect x="34" y="34" width="296" height="8" rx="2" fill="#c8b48a"/>
+  <rect x="34" y="34" width="296" height="8" rx="2" fill="#8a5a1c" class="prog" style="animation-delay:0.0s"/>
+</g><g transform="translate(470 218)">
+  <circle cx="12" cy="-5" r="11" fill="#2a1d0c" stroke="#c9a24a"/>
+  <text x="12" y="0" text-anchor="middle" font-size="15" font-weight="700" fill="#ffd100">!</text>
+  <text x="34" y="0" font-size="16" font-weight="700" fill="#5a2d00">Project Ember</text>
+  <text x="34" y="22" font-size="12.5" fill="#2b1a08">Forge a hardcore mobile RPG in Unity.</text>
+  <rect x="34" y="34" width="296" height="8" rx="2" fill="#c8b48a"/>
+  <rect x="34" y="34" width="296" height="8" rx="2" fill="#8a5a1c" class="prog" style="animation-delay:0.4s"/>
+</g>
+</svg>

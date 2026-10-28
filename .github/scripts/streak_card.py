@@ -1,4 +1,4 @@
-"""Draws the contribution streak card for the profile README.
+"""Draws the WoW-style achievements panel (contribution streak card) for the profile README.
 
 Runs in GitHub Actions with the built-in GITHUB_TOKEN, so no outside service
 is involved. Pass --demo to render with made-up data (no network).
@@ -10,7 +10,7 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 USER = os.environ.get("USERNAME", "Aransok")
-OUT = os.environ.get("OUT", "profile-3d-contrib/streak-ember.svg")
+OUT = os.environ.get("OUT", "profile-3d-contrib/achievements.svg")
 
 # Same palette as .github/profile-3d.json
 BG, FG, WEAK = "#090b0f", "#e9edf2", "#8b95a3"
@@ -105,7 +105,7 @@ def span(a, b):
     if a == b:
         return fmt(a)
     left = a.strftime("%b %-d") if a.year == b.year else fmt(a)
-    return f"{left} – {fmt(b)}"
+    return f"{left} to {fmt(b)}"
 
 
 def level(n, top):
@@ -115,62 +115,69 @@ def level(n, top):
 
 
 def render(days):
+    """WoW achievements panel: three achievement rows plus a daily XP bar."""
     total, first_day, cur, longest = stats(days)
-    W, H = 1280, 345
-    col = [W / 6, W / 2, 5 * W / 6]
+    W, H = 840, 360
+    GOLD, YEL, TXT, DIM = "#c9a24a", "#ffd100", "#f1e6cf", "#9a8a6a"
+
+    def row(y, title, desc, sub, pts, icon, earned, delay):
+        edge = GOLD if earned else "#4a4030"
+        tcol = YEL if earned else DIM
+        return f'''<g class="fade" style="animation-delay:{delay}s">
+  <rect x="24" y="{y}" width="792" height="72" rx="6" fill="url(#rowbg)" stroke="{edge}" stroke-opacity=".8"/>
+  <rect x="34" y="{y+8}" width="56" height="56" rx="4" fill="#1a120a" stroke="{edge}" stroke-width="2"/>
+  <g transform="translate(62 {y+36})" fill="{tcol}">{icon}</g>
+  <text x="420" y="{y+30}" text-anchor="middle" font-size="18" font-weight="700" fill="{tcol}">{title}</text>
+  <text x="420" y="{y+52}" text-anchor="middle" font-size="13" fill="{TXT}">{desc}</text>
+  <text x="420" y="{y+67}" text-anchor="middle" font-size="11" fill="{DIM}">{sub}</text>
+  <path d="M760 {y+12} h36 v26 q0 18 -18 26 q-18 -8 -18 -26z" fill="#2a1d0c" stroke="{edge}" stroke-width="2"/>
+  <text x="778" y="{y+42}" text-anchor="middle" font-size="{14 if pts < 1000 else 11}" font-weight="700" fill="{TXT}">{pts:,}</text>
+</g>'''
+
+    flame = '<path class="flame" d="M0 -20 c10 12 14 20 14 28 a14 14 0 0 1 -28 0 c0 -6 3 -10 6 -13 c0 5 2 8 5 9 c-1 -9 1 -16 3 -24z"/>'
+    sword = '<path d="M-16 16 l4 4 l6 -6 l4 4 l3 -3 l-4 -4 l17 -17 l2 -12 l-12 2 l-17 17 l-4 -4 l-3 3 l4 4z"/>'
+    coins = '<ellipse cx="0" cy="12" rx="16" ry="6"/><ellipse cx="0" cy="3" rx="16" ry="6" opacity=".85"/><ellipse cx="0" cy="-6" rx="16" ry="6" opacity=".7"/><ellipse cx="0" cy="-15" rx="16" ry="6"/>'
+
+    alive = cur[0] > 0
+    rows = (
+        row(70, "Unbroken Chain", f"Commit {cur[0]} days in a row", span(cur[1], cur[2]) if alive else "Start a new streak today", cur[0], flame, alive, .1)
+        + row(152, "Iron Will", f"Longest streak: {longest[0]} days", span(longest[1], longest[2]), longest[0], sword, longest[0] > 0, .25)
+        + row(234, "The Grind", f"{total:,} contributions on GitHub", f"{fmt(first_day)} to present", total, coins, total > 0, .4)
+    )
 
     recent = days[-53:]
     top = max((n for _, n in recent), default=1)
-    cell, gap = 18, 4
-    strip_w = len(recent) * (cell + gap) - gap
-    x0 = (W - strip_w) / 2
-    strip = "".join(
-        f'<rect x="{x0 + i * (cell + gap):.1f}" y="300" width="{cell}" height="{cell}" rx="4" '
-        f'fill="{CELLS[level(n, top)]}" style="animation-delay:{i * 18}ms" class="cell"><title>{d}: {n}</title></rect>'
+    xp_cols = ["#1b1530", "#3b2a6b", "#6a3fb5", "#9a63e6", YEL]
+    seg_w = 762 / len(recent)
+    xp = "".join(
+        f'<rect x="{39 + i * seg_w:.1f}" y="328" width="{seg_w - 2:.1f}" height="12" fill="{xp_cols[level(n, top)]}" class="cell" style="animation-delay:{i * 15}ms"><title>{d}: {n}</title></rect>'
         for i, (d, n) in enumerate(recent)
     )
 
-    alive = cur[0] > 0
-    ring = EMBER if alive else WEAK
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Achievements: current streak {cur[0]} days, longest {longest[0]} days, {total} contributions">
+<title>Achievements</title>
 <style>
-* {{ font-family: "Ubuntu", "Helvetica", "Arial", sans-serif; }}
-.big {{ font-size: 64px; font-weight: 700; }}
-.label {{ font-size: 22px; font-weight: 600; fill: {FG}; }}
-.sub {{ font-size: 17px; fill: {WEAK}; }}
+text {{ font-family: "Friz Quadrata TT", Verdana, "Segoe UI", system-ui, sans-serif; }}
 .fade {{ animation: fade .7s ease-out backwards; }}
 .cell {{ animation: fade .4s ease-out backwards; }}
-.flame {{ transform-origin: {col[1]}px 64px; animation: flicker 1.6s ease-in-out infinite; }}
+.flame {{ animation: flicker 1.6s ease-in-out infinite; }}
 @keyframes fade {{ from {{ opacity: 0; }} }}
-@keyframes flicker {{ 0%,100% {{ transform: scale(1); }} 50% {{ transform: scale(1.12) rotate(-3deg); }} }}
+@keyframes flicker {{ 50% {{ opacity: .6; }} }}
+@media (prefers-reduced-motion: reduce) {{ .fade, .cell, .flame {{ animation: none; }} }}
 </style>
-<rect width="{W}" height="{H}" rx="18" fill="{BG}"/>
-<line x1="{W/3}" y1="50" x2="{W/3}" y2="250" stroke="{LINE}" stroke-width="2"/>
-<line x1="{2*W/3}" y1="50" x2="{2*W/3}" y2="250" stroke="{LINE}" stroke-width="2"/>
-
-<g class="fade" style="animation-delay:.1s" text-anchor="middle">
-  <text x="{col[0]}" y="150" class="big" fill="{TEAL}">{total:,}</text>
-  <text x="{col[0]}" y="200" class="label">Total Contributions</text>
-  <text x="{col[0]}" y="230" class="sub">{fmt(first_day)} – Present</text>
-</g>
-
-<g class="fade" style="animation-delay:.25s" text-anchor="middle">
-  <circle cx="{col[1]}" cy="128" r="62" fill="none" stroke="{ring}" stroke-width="6" stroke-opacity=".9"/>
-  <rect x="{col[1]-22}" y="52" width="44" height="30" fill="{BG}"/>
-  <path class="flame" fill="{ring}" d="M{col[1]} 46 c10 12 14 20 14 28 a14 14 0 0 1 -28 0 c0 -6 3 -10 6 -13 c0 5 2 8 5 9 c-1 -9 1 -16 3 -24 z"/>
-  <text x="{col[1]}" y="150" class="big" fill="{EMBER if alive else FG}">{cur[0]}</text>
-  <text x="{col[1]}" y="226" class="label" fill="{EMBER}">Current Streak</text>
-  <text x="{col[1]}" y="254" class="sub">{span(cur[1], cur[2])}</text>
-</g>
-
-<g class="fade" style="animation-delay:.4s" text-anchor="middle">
-  <text x="{col[2]}" y="150" class="big" fill="{FG}">{longest[0]}</text>
-  <text x="{col[2]}" y="200" class="label">Longest Streak</text>
-  <text x="{col[2]}" y="230" class="sub">{span(longest[1], longest[2])}</text>
-</g>
-
-<text x="{x0}" y="288" class="sub" font-size="14">Last {len(recent)} days</text>
-{strip}
+<defs>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a130b"/><stop offset="1" stop-color="#0b0805"/></linearGradient>
+  <linearGradient id="rowbg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a1e0f"/><stop offset=".5" stop-color="#1c140a"/><stop offset="1" stop-color="#2a1e0f"/></linearGradient>
+</defs>
+<rect x="2" y="2" width="{W-4}" height="{H-4}" rx="10" fill="url(#panel)" stroke="{GOLD}" stroke-width="3"/>
+<rect x="9" y="9" width="{W-18}" height="{H-18}" rx="6" fill="none" stroke="#5a4520"/>
+<text x="28" y="48" font-size="22" font-weight="700" fill="{YEL}">Achievements</text>
+<text x="812" y="48" text-anchor="end" font-size="15" font-weight="700" fill="{YEL}">{total + cur[0] + longest[0]:,}</text>
+<text x="812" y="30" text-anchor="end" font-size="11" fill="{DIM}">Achievement Points</text>
+{rows}
+<text x="39" y="322" font-size="11" fill="{DIM}">Daily XP · last {len(recent)} days</text>
+<rect x="36" y="325" width="768" height="18" rx="3" fill="#0a0710" stroke="#5a4520"/>
+{xp}
 </svg>
 '''
 

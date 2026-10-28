@@ -1,17 +1,17 @@
 {
   "type": "normal",
   "fileName": "profile-ember.svg",
-  "backgroundColor": "#090b0f",
-  "foregroundColor": "#e9edf2",
-  "strongColor": "#ffb35c",
-  "weakColor": "#8b95a3",
-  "radarColor": "#7fe3d4",
+  "backgroundColor": "#0b0805",
+  "foregroundColor": "#f1e6cf",
+  "strongColor": "#ffd100",
+  "weakColor": "#9a8a6a",
+  "radarColor": "#c9a24a",
   "growingAnimation": true,
   "contribColors": [
-    "#141922",
-    "#12423f",
-    "#1d7268",
-    "#4cc7b4",
-    "#ffb35c"
+    "#1a130b",
+    "#4a3410",
+    "#7a5a1c",
+    "#c9a24a",
+    "#ffd100"
   ]
 }

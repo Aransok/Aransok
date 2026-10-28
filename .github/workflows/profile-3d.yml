@@ -1,6 +1,7 @@
-name: Profile 3D contributions
+name: Profile cards
 
-# Redraws the 3D contribution graph and the streak card once a day.
+# Redraws the 3D contribution graph, the achievements panel and the
+# legendary item card once a day.
 on:
   schedule:
     - cron: "17 3 * * *"
@@ -11,6 +12,7 @@ on:
       - ".github/workflows/profile-3d.yml"
       - ".github/profile-3d.json"
       - ".github/scripts/streak_card.py"
+      - ".github/scripts/item_card.py"
 
 permissions:
   contents: write
@@ -25,16 +27,21 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/profile-3d.json
-      - name: Draw streak card
+      - name: Draw achievements panel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
         run: python3 .github/scripts/streak_card.py
+      - name: Draw legendary item card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: python3 .github/scripts/item_card.py
       - name: Commit and push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A profile-3d-contrib
-          if git commit -m "Update contribution graph and streak card"; then
+          if git commit -m "Update profile cards"; then
             git push
           fi

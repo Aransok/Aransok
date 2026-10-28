@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="150" viewBox="0 0 840 150" role="img" aria-label="Tech stack as an action bar: Python, Django, Flask, React, TypeScript, Postgres, Pinecone, Docker, n8n, Git">
+<title>Action Bar</title>
+<style>
+text { font-family: "Friz Quadrata TT", Verdana, "Segoe UI", system-ui, sans-serif; }
+.cd { opacity: 0; animation: cd 9s linear infinite; }
+@keyframes cd { 0% { opacity: .6; } 8% { opacity: 0; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .cd { animation: none; } }
+</style>
+<defs>
+  <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2418"/><stop offset="1" stop-color="#14100a"/></linearGradient>
+  <linearGradient id="s0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd43b"/><stop offset="1" stop-color="#3776ab"/></linearGradient><linearGradient id="s1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#44b78b"/><stop offset="1" stop-color="#0c4b33"/></linearGradient><linearGradient id="s2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ca3af"/><stop offset="1" stop-color="#1f2937"/></linearGradient><linearGradient id="s3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#61dafb"/><stop offset="1" stop-color="#0b3a4a"/></linearGradient><linearGradient id="s4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3178c6"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient><linearGradient id="s5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f7ab3"/><stop offset="1" stop-color="#1e3a5f"/></linearGradient><linearGradient id="s6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#14213d"/></linearGradient><linearGradient id="s7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2496ed"/><stop offset="1" stop-color="#0b3d91"/></linearGradient><linearGradient id="s8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ea4b71"/><stop offset="1" stop-color="#4a1325"/></linearGradient><linearGradient id="s9" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f05032"/><stop offset="1" stop-color="#5a1a0d"/></linearGradient>
+</defs>
+<rect x="2" y="2" width="836" height="146" rx="10" fill="url(#bar)" stroke="#c9a24a" stroke-width="3"/>
+<text x="24" y="28" font-size="14" font-weight="700" fill="#ffd100">Action Bar</text>
+<text x="816" y="28" text-anchor="end" font-size="11" fill="#9a8a6a">spells learned: 10</text>
+<g>
+  <rect x="37.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="40.0" y="45" width="58" height="58" rx="4" fill="url(#s0)"/>
+  <rect x="40.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="40.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:0.0s"/>
+  <text x="69.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">Py</text>
+  <text x="94.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">1</text>
+  <text x="69.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">Python</text>
+</g>
+<g>
+  <rect x="115.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="118.0" y="45" width="58" height="58" rx="4" fill="url(#s1)"/>
+  <rect x="118.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="118.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:0.9s"/>
+  <text x="147.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">Dj</text>
+  <text x="172.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">2</text>
+  <text x="147.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">Django</text>
+</g>
+<g>
+  <rect x="193.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="196.0" y="45" width="58" height="58" rx="4" fill="url(#s2)"/>
+  <rect x="196.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="196.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:1.8s"/>
+  <text x="225.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">Fl</text>
+  <text x="250.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">3</text>
+  <text x="225.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">Flask</text>
+</g>
+<g>
+  <rect x="271.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="274.0" y="45" width="58" height="58" rx="4" fill="url(#s3)"/>
+  <rect x="274.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="274.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:2.7s"/>
+  <text x="303.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">Re</text>
+  <text x="328.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">4</text>
+  <text x="303.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">React</text>
+</g>
+<g>
+  <rect x="349.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="352.0" y="45" width="58" height="58" rx="4" fill="url(#s4)"/>
+  <rect x="352.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="352.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:3.6s"/>
+  <text x="381.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">TS</text>
+  <text x="406.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">5</text>
+  <text x="381.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">TypeScript</text>
+</g>
+<g>
+  <rect x="427.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="430.0" y="45" width="58" height="58" rx="4" fill="url(#s5)"/>
+  <rect x="430.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="430.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:4.5s"/>
+  <text x="459.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">Pg</text>
+  <text x="484.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">6</text>
+  <text x="459.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">Postgres</text>
+</g>
+<g>
+  <rect x="505.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="508.0" y="45" width="58" height="58" rx="4" fill="url(#s6)"/>
+  <rect x="508.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="508.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:5.4s"/>
+  <text x="537.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">Pc</text>
+  <text x="562.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">7</text>
+  <text x="537.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">Pinecone</text>
+</g>
+<g>
+  <rect x="583.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="586.0" y="45" width="58" height="58" rx="4" fill="url(#s7)"/>
+  <rect x="586.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="586.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:6.3s"/>
+  <text x="615.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">Dk</text>
+  <text x="640.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">8</text>
+  <text x="615.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">Docker</text>
+</g>
+<g>
+  <rect x="661.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="664.0" y="45" width="58" height="58" rx="4" fill="url(#s8)"/>
+  <rect x="664.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="664.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:7.2s"/>
+  <text x="693.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">n8</text>
+  <text x="718.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">9</text>
+  <text x="693.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">n8n</text>
+</g>
+<g>
+  <rect x="739.0" y="42" width="64" height="64" rx="6" fill="#0d0a06" stroke="#6b5426" stroke-width="2"/>
+  <rect x="742.0" y="45" width="58" height="58" rx="4" fill="url(#s9)"/>
+  <rect x="742.0" y="45" width="58" height="29.0" rx="4" fill="#fff" opacity=".12"/>
+  <rect x="742.0" y="45" width="58" height="58" fill="#000" class="cd" style="animation-delay:8.1s"/>
+  <text x="771.0" y="83.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff" stroke="#000" stroke-width=".8" paint-order="stroke">Gt</text>
+  <text x="796.0" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#e5e7eb" stroke="#000" stroke-width="2" paint-order="stroke">0</text>
+  <text x="771.0" y="128" text-anchor="middle" font-size="11" fill="#c8b98f">Git</text>
+</g>
+</svg>

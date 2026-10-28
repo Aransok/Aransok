@@ -1,72 +1,25 @@
 <div align="center">
 
-# Hi, I'm Doan Idriz 👋
+<a href="https://portfolio-website-fr7t.onrender.com"><img src="profile-3d-contrib/legendary-item.svg" alt="Doan Idriz, Forger of Agents. Legendary item: builds AI agents and RAG pipelines from scratch in pure Python. Binds when hired." width="100%" /></a>
 
-### Full-Stack Developer & AI Automation Engineer
+[![Email](https://img.shields.io/badge/Whisper-doanchetoidriz%40gmail.com-c9a24a?style=for-the-badge&logo=gmail&logoColor=ffd100&labelColor=1a130b)](mailto:doanchetoidriz@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/Guild-LinkedIn-c9a24a?style=for-the-badge&logo=linkedin&logoColor=ffd100&labelColor=1a130b)](https://linkedin.com/in/doan-idriz-70b472165)
+[![Portfolio](https://img.shields.io/badge/Armory-Portfolio-c9a24a?style=for-the-badge&logo=googlechrome&logoColor=ffd100&labelColor=1a130b)](https://portfolio-website-fr7t.onrender.com)
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2DD4BF&center=true&vCenter=true&width=600&lines=Python+%2F+Django+%2F+React;Building+AI+agents+%26+automation+pipelines;Shipping+real+production+systems" alt="Typing SVG" />
+<img src="profile-3d-contrib/achievements.svg" alt="Achievements: current streak, longest streak and total GitHub contributions" width="100%" />
 
-[![Email](https://img.shields.io/badge/Email-doanchetoidriz%40gmail.com-2DD4BF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:doanchetoidriz@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Doan%20Idriz-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/doan-idriz-70b472165)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-2DD4BF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://portfolio-website-fr7t.onrender.com)
+<a href="https://www.broffice.bg"><img src="profile-3d-contrib/quest-log.svg" alt="Quest log. Completed: Broffice, a live e-commerce platform. Active: AI Agents Office, Project Ember." width="100%" /></a>
 
-</div>
+[![Live](https://img.shields.io/badge/Live-www.broffice.bg-c9a24a?style=flat-square&logo=googlechrome&logoColor=ffd100&labelColor=1a130b)](https://www.broffice.bg)
+[![Source](https://img.shields.io/badge/Source-broffice--app-c9a24a?style=flat-square&logo=github&logoColor=ffd100&labelColor=1a130b)](https://github.com/Aransok/broffice-app)
 
----
+<img src="profile-3d-contrib/action-bar.svg" alt="Tech stack: Python, Django, Flask, React, TypeScript, Postgres, Pinecone, Docker, n8n, Git" width="100%" />
 
-## 🚀 Flagship Project
+<img src="profile-3d-contrib/profile-ember.svg" alt="3D graph of my GitHub contributions over the last year" width="100%" />
 
-<div align="center">
+[![Resume](https://img.shields.io/badge/Loot-Resume%20PDF-c9a24a?style=for-the-badge&logo=readdotcv&logoColor=ffd100&labelColor=1a130b)](https://portfolio-website-fr7t.onrender.com/static/media/Doan_s_CV.pdf)
+[![ATS Resume](https://img.shields.io/badge/Loot-ATS%20Resume%20PDF-c9a24a?style=for-the-badge&logo=readdotcv&logoColor=ffd100&labelColor=1a130b)](https://portfolio-website-fr7t.onrender.com/static/media/Doan_Idriz_CV_ATS.pdf)
 
-### [Broffice — Live E-Commerce Platform](https://www.broffice.bg)
-
-*A full-stack e-commerce platform for a Bulgarian retailer — live in production with real customers.*
-
-[![Live Site](https://img.shields.io/badge/Live-www.broffice.bg-2DD4BF?style=flat-square&logo=googlechrome&logoColor=white)](https://www.broffice.bg)
-[![Source](https://img.shields.io/badge/Source-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Aransok/broffice-app)
-
-Product catalog · Dual pricing engine · Promotions system · B2B/company orders
-Self-hosted CI/CD deploy pipeline · Automated backups & recovery
-
-</div>
-
----
-
-## 🛠️ Tech Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,django,flask,react,angular,ts,js,postgres,sqlite,mongodb,express,docker,terraform,html,css,git&theme=dark" alt="Skills" />
-
-</div>
-
-## 🔭 Currently
-
-AI agents, RAG pipelines, and full-stack production systems — orchestrating LLM agents in pure Python, building semantic search on Pinecone, and automating workflows with N8N.
-
----
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Aransok/Aransok/main/profile-3d-contrib/streak-ember.svg" alt="GitHub contribution streak" width="100%" />
-
-<img src="https://raw.githubusercontent.com/Aransok/Aransok/main/profile-3d-contrib/profile-ember.svg" alt="3D graph of my GitHub contributions over the last year" width="100%" />
-
-</div>
-
----
-
-## 📄 Resume / CV
-
-<div align="center">
-
-[![Resume](https://img.shields.io/badge/Resume-Download%20PDF-2DD4BF?style=for-the-badge&logo=readdotcv&logoColor=white)](https://portfolio-website-fr7t.onrender.com/static/media/Doan_s_CV.pdf)
-[![ATS Resume](https://img.shields.io/badge/ATS%20Version-Download%20PDF-2DD4BF?style=for-the-badge&logo=readdotcv&logoColor=white)](https://portfolio-website-fr7t.onrender.com/static/media/Doan_Idriz_CV_ATS.pdf)
-
-</div>
-
-<div align="center">
-
-📍 Plovdiv, Bulgaria
+<sub>📍 Plovdiv, Bulgaria · open to remote</sub>
 
 </div>
