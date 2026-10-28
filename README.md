@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://portfolio-website-fr7t.onrender.com"><img src="profile-3d-contrib/profile-window.svg" alt="Doan Idriz, Forger of Agents. Builds AI agents and RAG pipelines from scratch in pure Python. Achievements, quest log (Broffice live e-commerce, AI Agents Office, Project Ember) and tech stack." width="100%" /></a>
+<a href="https://portfolio-website-fr7t.onrender.com"><img src="profile-3d-contrib/profile-window.svg?v=3" alt="Doan Idriz, Forger of Agents. Builds AI agents and RAG pipelines from scratch in pure Python. Achievements, quest log (Broffice live e-commerce, AI Agents Office, Project Ember) and tech stack." width="100%" /></a>
 
 [![Email](https://img.shields.io/badge/Whisper-doanchetoidriz%40gmail.com-c9a24a?style=for-the-badge&logo=gmail&logoColor=ffd100&labelColor=1a130b)](mailto:doanchetoidriz@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/Guild-LinkedIn-c9a24a?style=for-the-badge&logo=linkedin&logoColor=ffd100&labelColor=1a130b)](https://linkedin.com/in/doan-idriz-70b472165)
